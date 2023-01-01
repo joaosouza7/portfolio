@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { RiCodeSSlashLine } from 'react-icons/ri';
+import { RiCodeSSlashLine, RiMenuLine } from 'react-icons/ri';
 
 export default function NavBar() {
     return (
@@ -14,6 +14,9 @@ export default function NavBar() {
                 </div>
 
                 <div className="menu">
+                    <div className="menu-mobile">
+                        <RiMenuLine size={30} color="#FFF" />
+                    </div>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Quem sou?</a></li>
