@@ -1,0 +1,143 @@
+/***HOME***/
+
+.home {
+    background-color: var(--bg-color);
+}
+
+.container-home {
+    width: 100%;
+    max-width: 143.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    padding: 3.2rem 8%;
+}
+
+.info-area{
+    max-width: 400px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info h3 {
+    margin-left: .3rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.info h1 {
+    font-weight: 600;
+    margin-left: -1px;
+    font-size: 3rem;
+}
+
+.info span {
+    font-size: 1.1rem;
+    color: var(--main-color);
+    margin-bottom: .5rem;
+
+    width: 14.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--main-color);
+    animation: typing 2s steps(35), blink .5s step-end infinite alternate;
+}
+
+.info p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.socials {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.socials a:hover {
+    animation: jello 2s ease 0s 1 normal forwards;
+    color: var(--main-color)!important;
+}
+
+.socials svg:hover {
+    color: var(--main-color)!important;
+}
+
+.photo {
+    max-width: 29.3rem;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*.photo {
+    max-width: 25.2rem;
+    height: 25.2rem;
+    overflow: hidden;
+    border: 2px solid rgb(26, 25, 25);
+    border-radius: 50%;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    position: relative;
+    top: -27px;
+    object-fit: cover;
+}*/
+
+
+/*** ANIMATIONS ***/
+
+@keyframes jello {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

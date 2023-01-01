@@ -15,6 +15,13 @@ button {
   border: none;
 }
 
+:root {
+  --main-color: #facc15;
+  --bg-color: #040405;
+  --bg-color-500: #141414;
+  --text-color: azure;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
