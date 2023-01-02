@@ -18,10 +18,10 @@ export default function NavBar() {
                         <RiMenuLine size={30} color="#FFF" />
                     </div>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Quem sou?</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Projetos</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Quem sou?</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projetos</a></li>
                     </ul>
                 </div>
             </div>
