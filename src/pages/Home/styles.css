@@ -3,6 +3,7 @@
 .home {
     background-color: var(--bg-color);
     color: var(--text-color);
+    padding-top: 5rem;
 }
 
 .container-home {
@@ -11,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3.1rem 8%;
+    padding: 4rem 8%;
 }
 
 .info-area{
@@ -228,9 +229,9 @@
 
 .project {
     width: 100%;
+    height: 14.7rem;
     max-width: 550px;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
     border-radius: .2rem;
@@ -265,6 +266,15 @@ footer div {
 footer div span {
     margin: 0 .3rem;
     font-weight: 200;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 143.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.1rem 8%;
 }
 
 /***MEDIA QUERIES***/
@@ -320,12 +330,20 @@ footer div span {
     .portfolio-area {
         justify-content: center;
     }
+
+    .container-footer {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 780px) {
     .card {
         width: 80%;
         min-height: 230px;
+    }
+
+    .portfolio-area {
+        gap: 0;
     }
 
     footer div:first-child {

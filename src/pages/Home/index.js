@@ -1,17 +1,42 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 import './styles.css';
-import NavBar from "../../components/NavBar";
 
 import { SiHtml5, SiCss3, SiNodedotjs, SiSass, SiJavascript, SiTypescript, SiReact } from 'react-icons/si';
 import { RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiDownloadCloud2Line, RiCopyrightFill, RiCodeBoxFill } from 'react-icons/ri';
 import { FiMail } from 'react-icons/fi';
 
+import NavBar from "../../components/NavBar";
+
 import bgAction from '../../assets/program.svg';
 import profile from '../../assets/profile.jpg';
 import gow from '../../assets/gow.png';
+import mylink from '../../assets/mylink.png';
+import loginScreen from '../../assets/login-screen.png';
+import imcCalculator from '../../assets/imc-calculator.png';
+import lol from '../../assets/lol.png';
 
 import cv from '../../assets/cv.pdf';
 
 export default function Home() {
+
+    useEffect(() => {
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2000,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.info-area, .title', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.container-home, .about-area', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.bg-home, .btn-download', { delay: 600, origin: 'right' });
+        ScrollReveal().reveal('.socials a', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.card, .project', { delay: 500, origin: 'bottom', interval: 300 });
+        ScrollReveal().reveal('.photo, .container-footer', { delay: 500, origin: 'top' });
+    }, [])
+
     return (
         <main>
             <NavBar />
@@ -135,16 +160,24 @@ export default function Home() {
                 <div className="container-home">
                     <div className="portfolio-area">
                         <div className="project">
-                            <a href=""><img src={gow} alt="" /></a>
+                            <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer"><img src={mylink} alt="MyLink" /></a>
                         </div>
 
                         <div className="project">
-                            <a href=""><img src={gow} alt="" /></a>
+                            <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer"><img src={imcCalculator} alt="Calculador de IMC" /></a>
                         </div>
 
                         <div className="project">
-                            <a href=""><img src={gow} alt="" /></a>
-                        </div>                        
+                            <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer"><img src={gow} alt="God of War Ragnarok" /></a>
+                        </div>
+
+                        <div className="project">
+                            <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer"><img src={lol} alt="Tela do jogo League of Legends" /></a>
+                        </div>
+
+                        <div className="project">
+                            <a href="https://github.com/joaosouza7/login-screen" target="_blank" rel="noreferrer"><img src={loginScreen} alt="Tela de login" /></a>
+                        </div>                
                     </div>
                 </div>
             </section>
@@ -152,7 +185,7 @@ export default function Home() {
             {/***FOOTER***/}
 
             <footer>
-                <div className="container-home">
+                <div className="container-footer">
                     <div>
                         <RiCopyrightFill size={22} color="#FFF" />
                         <span>Todos os direitos reservados</span>
