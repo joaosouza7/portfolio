@@ -6,7 +6,7 @@
 
 </div>
 
-<h4 align="center"><a href="">Clique aqui para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://portfolio-joaosouza7.vercel.app">Clique aqui para visitar o projeto</a></h4>
 
 
 ## 📚 Seções
@@ -28,3 +28,10 @@ Para o desenvolvimento deste projeto foram utilizadas as seguintes tecnologias:
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ReactJS](https://reactjs.org/)
 - [ScrollReveal](https://scrollrevealjs.org/)
+
+
+## 📝 Licença
+
+Esse projeto está sob a licença [GNU](./LICENSE).
+
+Feito com ❤️ por João Souza | [Entre em contato!](https://www.linkedin.com/in/joaosouzadesenvolvedorweb)

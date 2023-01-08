@@ -24,7 +24,7 @@ export default function Home() {
     useEffect(() => {
         ScrollReveal({
             reset: true,
-            distance: '60px',
+            distance: '30px',
             duration: 2000,
             delay: 400
         });
