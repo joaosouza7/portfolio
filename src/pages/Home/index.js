@@ -4,16 +4,17 @@ import ScrollReveal from 'scrollreveal';
 import './styles.css';
 
 import { SiHtml5, SiCss3, SiNodedotjs, SiSass, SiJavascript, SiTypescript, SiReact } from 'react-icons/si';
-import { RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiDownloadCloud2Line, RiCopyrightFill, RiCodeBoxFill } from 'react-icons/ri';
-import { FiMail } from 'react-icons/fi';
+import { RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiDownloadCloud2Line, RiCopyrightFill, RiCodeBoxFill, RiArrowRightCircleFill, RiHeart3Fill } from 'react-icons/ri';
+import { FiMail, FiLink } from 'react-icons/fi';
 
 import NavBar from "../../components/NavBar";
 
 import bgAction from '../../assets/program.svg';
 import profile from '../../assets/profile.jpg';
+import sc from '../../assets/sistema-chamados01.png';
 import gow from '../../assets/gow.png';
 import mylink from '../../assets/mylink.png';
-import loginScreen from '../../assets/login-screen.png';
+import loginPage from '../../assets/login-page.png';
 import imcCalculator from '../../assets/imc-calculator.png';
 import lol from '../../assets/lol.png';
 
@@ -33,8 +34,8 @@ export default function Home() {
         ScrollReveal().reveal('.container-home, .about-area', { delay: 600, origin: 'bottom' });
         ScrollReveal().reveal('.bg-home, .btn-download', { delay: 600, origin: 'right' });
         ScrollReveal().reveal('.socials a', { delay: 500, origin: 'bottom', interval: 200 });
-        ScrollReveal().reveal('.card, .project', { delay: 500, origin: 'bottom', interval: 300 });
-        ScrollReveal().reveal('.photo, .container-footer', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.card', { delay: 500, origin: 'bottom', interval: 300 });
+        ScrollReveal().reveal('.photo', { delay: 500, origin: 'top' });
     }, [])
 
     return (
@@ -86,7 +87,7 @@ export default function Home() {
 
                     <div className="about-area">
                         <div className="about-info">
-                            <p>Sou um desenvolvedor <span className="span">Front-End</span> iniciante e em constante evolução. Apaixonado por tecnologia e busco oportunidade na área a fim de aperfeiçoar meus conhecimentos e adquirir experiência no mercado. Possuo <span className="span">sólidos conhecimentos</span> em HTML, CSS e JavaScript e atualmente estudando React JS. Tenho interesse em desenvolvimento de aplicações web e mobile, bem como, melhores práticas de desenvolvimento.</p>
+                            <p>Sou um aspirante a desenvolvedor <span className="span">Front-End</span> em constante evolução. Apaixonado por tecnologia e busco oportunidade na área a fim de aperfeiçoar meus conhecimentos e adquirir experiência no mercado. Possuo <span className="span">sólidos conhecimentos</span> em HTML, CSS e JavaScript e React.js. Atualmente me aprofundando em Typescript, React Native e Node.js. Tenho interesse em desenvolvimento de aplicações web e mobile, bem como, melhores práticas de desenvolvimento.</p>
                         </div>
                         <a href={cv} download="Currículo - João Pedro de Souza Barroso" className="btn-download">
                             <RiDownloadCloud2Line size={23} color="#FFF" />
@@ -160,24 +161,117 @@ export default function Home() {
                 <div className="container-home">
                     <div className="portfolio-area">
                         <div className="project">
-                            <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer"><img src={mylink} alt="MyLink" /></a>
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={sc} alt="Sistema de chamados" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 01</h3>
+                                    </a>
+                                    <span>💻 Sistema de chamados responsivo feito com React e conexão com o Firebase.</span>
+                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div className="project">
-                            <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer"><img src={imcCalculator} alt="Calculador de IMC" /></a>
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={loginPage} alt="Login Page" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/login-page" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 02</h3>
+                                    </a>
+                                    <span>💻 Tela de login e cadastro de usuários desenvolvida com React.</span>
+                                    <a href="https://github.com/joaosouza7/login-page" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div className="project">
-                            <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer"><img src={gow} alt="God of War Ragnarok" /></a>
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={mylink} alt="MyLink" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 03</h3>
+                                    </a>
+                                    <span>💻 Encurtador de links com React.</span>
+                                    <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div className="project">
-                            <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer"><img src={lol} alt="Tela do jogo League of Legends" /></a>
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={imcCalculator} alt="Calculadora IMC" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 04</h3>
+                                    </a>
+                                    <span>💻 Calculador de IMC com React.</span>
+                                    <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div className="project">
-                            <a href="https://github.com/joaosouza7/login-screen" target="_blank" rel="noreferrer"><img src={loginScreen} alt="Tela de login" /></a>
-                        </div>                
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={lol} alt="Tela de login do jogo LOL" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 05</h3>
+                                    </a>
+                                    <span>💻 Clone da tela de login do jogo League of Legends</span>
+                                    <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project">
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={gow} alt="Landing Page do jogo God of War Ragnarok" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto 06</h3>
+                                    </a>
+                                    <span>💻 Landing Page do jogo God of War Ragnarok.</span>
+                                    <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+              
                     </div>
                 </div>
             </section>
@@ -191,10 +285,10 @@ export default function Home() {
                         <span>Todos os direitos reservados</span>
                     </div>
 
-                    <div>
-                        <span>Desenvolvido por João Souza</span>
-                        <RiCodeBoxFill size={23} color="#FFF" />
-                    </div>
+                    <span>
+                        Desenvolvido com <RiHeart3Fill color="#dc3545" />
+                        por João Souza
+                    </span>
                 </div>
             </footer>
 
