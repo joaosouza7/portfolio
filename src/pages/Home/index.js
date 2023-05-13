@@ -12,6 +12,8 @@ import NavBar from "../../components/NavBar";
 import bgAction from '../../assets/program.svg';
 import profile from '../../assets/profile.jpg';
 
+import weatherApp from '../../assets/projects-img/weather-app.png';
+import repos from '../../assets/projects-img/repos.png';
 import sc from '../../assets/projects-img/sistema-chamados.png';
 import gow from '../../assets/projects-img/gow.png';
 import mylink from '../../assets/projects-img/mylink.png';
@@ -165,18 +167,19 @@ export default function Home() {
                 <h3 className="title">Projetos</h3>
                 <div className="container-home">
                     <div className="portfolio-area">
+
                         <div className="project">
                             <div className="flip-project-inner">
                                 <div className="flip-project-front">
-                                    <img src={sc} alt="Sistema de chamados" />
+                                    <img src={weatherApp} alt="Weather App" />
                                 </div>
                                 <div className="flip-project-back">
-                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/joaosouza7/weather-app" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 01</h3>
+                                        <h3>Weather App</h3>
                                     </a>
-                                    <span>💻 Sistema de chamados responsivo feito com React e conexão com o Firebase.</span>
-                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                    <span>🌥️ Aplicativo que permite consultar as condições meteorológicas de um lugar.</span>
+                                    <a href="https://github.com/joaosouza7/weather-app" target="_blank" rel="noreferrer">
                                         <RiArrowRightCircleFill size={38} />
                                     </a>
                                 </div>
@@ -187,12 +190,32 @@ export default function Home() {
                         <div className="project">
                             <div className="flip-project-inner">
                                 <div className="flip-project-front">
+                                    <img src={sc} alt="Sistema de chamados" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Sistema de chamados</h3>
+                                    </a>
+                                    <span>💻 Sistema de chamados responsivo feito com React e conexão com o Firebase.</span>
+                                    <a href="https://github.com/joaosouza7/sistema-chamados" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div className="project">
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
                                     <img src={loginPage} alt="Login Page" />
                                 </div>
                                 <div className="flip-project-back">
                                     <a href="https://github.com/joaosouza7/login-page" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 02</h3>
+                                        <h3>Tela de Login</h3>
                                     </a>
                                     <span>💻 Tela de login e cadastro de usuários desenvolvida com React.</span>
                                     <a href="https://github.com/joaosouza7/login-page" target="_blank" rel="noreferrer">
@@ -211,7 +234,7 @@ export default function Home() {
                                 <div className="flip-project-back">
                                     <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 03</h3>
+                                        <h3>MyLink</h3>
                                     </a>
                                     <span>💻 Encurtador de links com React.</span>
                                     <a href="https://github.com/joaosouza7/mylink" target="_blank" rel="noreferrer">
@@ -230,9 +253,9 @@ export default function Home() {
                                 <div className="flip-project-back">
                                     <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 04</h3>
+                                        <h3>Calculadora IMC</h3>
                                     </a>
-                                    <span>💻 Calculador de IMC com React.</span>
+                                    <span>💻 Calculadora de IMC com React.</span>
                                     <a href="https://github.com/joaosouza7/imc-calculator" target="_blank" rel="noreferrer">
                                         <RiArrowRightCircleFill size={38} />
                                     </a>
@@ -249,7 +272,7 @@ export default function Home() {
                                 <div className="flip-project-back">
                                     <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 05</h3>
+                                        <h3>Tela de Login LOL (Clone)</h3>
                                     </a>
                                     <span>💻 Clone da tela de login do jogo League of Legends</span>
                                     <a href="https://github.com/joaosouza7/league-of-legends-login-page" target="_blank" rel="noreferrer">
@@ -267,10 +290,28 @@ export default function Home() {
                                 <div className="flip-project-back">
                                     <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer">
                                         <FiLink size={20}  />
-                                        <h3>Projeto 06</h3>
+                                        <h3>GOD of War Ragnarok</h3>
                                     </a>
                                     <span>💻 Landing Page do jogo God of War Ragnarok.</span>
                                     <a href="https://github.com/joaosouza7/god-of-war-ragnarok" target="_blank" rel="noreferrer">
+                                        <RiArrowRightCircleFill size={38} />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project">
+                            <div className="flip-project-inner">
+                                <div className="flip-project-front">
+                                    <img src={repos} alt="Preview repos" />
+                                </div>
+                                <div className="flip-project-back">
+                                    <a href="https://github.com/joaosouza7/repos" target="_blank" rel="noreferrer">
+                                        <FiLink size={20}  />
+                                        <h3>Projeto Repos</h3>
+                                    </a>
+                                    <span>💻 Busque e salve seus repositórios favoritos do Github.</span>
+                                    <a href="https://github.com/joaosouza7/repos" target="_blank" rel="noreferrer">
                                         <RiArrowRightCircleFill size={38} />
                                     </a>
                                 </div>
