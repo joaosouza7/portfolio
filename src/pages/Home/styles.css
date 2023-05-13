@@ -406,6 +406,10 @@ footer div span svg {
 
 @media (max-width: 780px) {
 
+    .info {
+        text-align: center;
+    }
+
     .bg-home {
         display: none;
     }

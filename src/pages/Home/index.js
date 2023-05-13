@@ -87,7 +87,11 @@ export default function Home() {
 
                     <div className="about-area">
                         <div className="about-info">
-                            <p>Sou um aspirante a desenvolvedor <span className="span">Front-End</span> em constante evolução. Apaixonado por tecnologia e busco oportunidade na área a fim de aperfeiçoar meus conhecimentos e adquirir experiência no mercado. Possuo <span className="span">sólidos conhecimentos</span> em HTML, CSS e JavaScript e React.js. Atualmente me aprofundando em Typescript, React Native e Node.js. Tenho interesse em desenvolvimento de aplicações web e mobile, bem como, melhores práticas de desenvolvimento.</p>
+                            <p>Aspirante a Desenvolvedor <span className="span">Front-End Júnior</span> em constante evolução, recém graduado em Sistemas para Internet pelo Instituto Federal de Brasília (IFB).</p>
+                            <br />
+                            <p>Organizado, proativo, dedicado e adaptável a mudanças, com sólidas <span className="span">habilidades em resolução de problemas</span>. Apaixonado por desenvolver soluções tecnológicas para problemas complexos e reais do cotidiano.</p>
+                            <br />
+                            <p>Possuo <span className="span">sólidos conhecimentos</span> em HTML, CSS, JavaScript e React.js e atualmente estudando e me aperfeiçoando em React Native, TypeScript e Node.js. Tenho interesse em desenvolvimento de aplicações web e mobile, bem como, melhores práticas de desenvolvimento.</p>
                         </div>
                         <a href={cv} download="Currículo - João Pedro de Souza Barroso" className="btn-download">
                             <RiDownloadCloud2Line size={23} color="#FFF" />
