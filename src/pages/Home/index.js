@@ -4,19 +4,20 @@ import ScrollReveal from 'scrollreveal';
 import './styles.css';
 
 import { SiHtml5, SiCss3, SiNodedotjs, SiSass, SiJavascript, SiTypescript, SiReact } from 'react-icons/si';
-import { RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiDownloadCloud2Line, RiCopyrightFill, RiCodeBoxFill, RiArrowRightCircleFill, RiHeart3Fill } from 'react-icons/ri';
+import { RiGithubFill, RiLinkedinBoxFill, RiInstagramLine, RiDownloadCloud2Line, RiCopyrightFill, RiArrowRightCircleFill, RiHeart3Fill } from 'react-icons/ri';
 import { FiMail, FiLink } from 'react-icons/fi';
 
 import NavBar from "../../components/NavBar";
 
 import bgAction from '../../assets/program.svg';
 import profile from '../../assets/profile.jpg';
-import sc from '../../assets/sistema-chamados01.png';
-import gow from '../../assets/gow.png';
-import mylink from '../../assets/mylink.png';
-import loginPage from '../../assets/login-page.png';
-import imcCalculator from '../../assets/imc-calculator.png';
-import lol from '../../assets/lol.png';
+
+import sc from '../../assets/projects-img/sistema-chamados.png';
+import gow from '../../assets/projects-img/gow.png';
+import mylink from '../../assets/projects-img/mylink.png';
+import loginPage from '../../assets/projects-img/login-page.png';
+import imcCalculator from '../../assets/projects-img/imc-calculator.png';
+import lol from '../../assets/projects-img/lol.png';
 
 import cv from '../../assets/cv.pdf';
 
