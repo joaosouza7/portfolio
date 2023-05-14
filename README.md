@@ -20,7 +20,7 @@
   <p align="center">
     Quer me conhecer um pouco melhor? Visite meu portfólio
     <br />
-    <a target="_blank" href="https://weather-app-joaosouza7.vercel.app/"><strong>Explore o site »</strong></a>
+    <a target="_blank" href="https://portfolio-joaosouza7.vercel.app/"><strong>Explore o site »</strong></a>
     <br />
     <br />
     <a href="#secoes">Seções</a> •
