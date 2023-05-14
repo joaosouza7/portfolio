@@ -11,7 +11,7 @@
 # production
 /build
 
-./src/assets/profile.jpg
+/src/assets/profile.jpg
 
 # misc
 .DS_Store
