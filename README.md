@@ -18,7 +18,7 @@
   <h3 align="center">💻 Portfólio - João Souza</h3>
 
   <p align="center">
-    Quer me conhecer um pouco melhor? Visite meu portfólio
+    Me conheça um pouco melhor. Visite meu portfólio
     <br />
     <a target="_blank" href="https://portfolio-joaosouza7.vercel.app/"><strong>Explore o site »</strong></a>
     <br />
@@ -37,8 +37,8 @@ O site é composto basicamente por quatro seções:
 
 - **Home:** Aqui temos uma breve apresentação;
 - **Quem sou:** Nesta seção, como o próprio nome diz, há uma descrição sobre quem sou;
-- **Skills:** Apresenta através de cards as tecnologias em que possuo conhecimentos;
-- **Projetos:** Exibe alguns projetos desenvolvidos e um link para acesso aos respectivos repositórios no Github;
+- **Skills:** Apresenta as tecnologias em que possuo conhecimento;
+- **Projetos:** Exibe alguns projetos desenvolvidos e um link para acesso aos respectivos repositórios;
 
 
 <!--Tecnologias-->
